@@ -1,0 +1,42 @@
+@import "global.less";
+
+.bold {
+	font-weight: bold;
+}
+.small{
+	font-size: 12pt;
+}
+.large{
+	font-size: 16pt;
+}
+.xlarge{
+	font-size: 18pt;
+}
+
+.hint{
+	color: @highlight3-color;
+}
+
+.box-shadow(@shadow1){
+    -webkit-box-shadow: @shadow1;
+    -moz-box-shadow: @shadow1;
+    box-shadow: @shadow1;
+}
+.box-shadow(@shadow1,@shadow2){
+    -webkit-box-shadow: @shadow1,@shadow2;
+    -moz-box-shadow: @shadow1,@shadow2;
+    box-shadow: @shadow1,@shadow2;
+}
+
+.inline {
+    display: inline;
+}
+
+.link {
+	font-family: 'museoSR300';
+	text-decoration: none;
+	color: @hyperlink-color;
+}
+    .link:hover{
+	   text-decoration: underline;
+    }

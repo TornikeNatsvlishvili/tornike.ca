@@ -1,0 +1,16 @@
+{
+  "name": "tornike.ca",
+  "version": "0.0.0",
+  "authors": [
+    "Tornike Natsvlishvili"
+  ],
+  "license": "MIT",
+  "homepage": "http://tornike.ca",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

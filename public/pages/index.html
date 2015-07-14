@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="mainApp" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tornike</title>
+    
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+    <script src="dist/js/app.min.js"></script>
+</head>
+<body ng-controller="mainController">
+    <div id="Header">
+        <h1>TORNIKE NATSVLISHVILI</h1>
+        <h2>თორნიკე ნაცვლიშვილი</h2>
+
+        <span ng-repeat="breadcrumb in breadcrumbs.get() track by breadcrumb.path" ng-class="{ active: $last }">
+            <h3 class="inline">
+                &gt;
+                <a ng-if="!$last" ng-href="#{{ breadcrumb.path }}" ng-bind="breadcrumb.title" class="link"></a>
+                <span ng-if="$last" ng-bind="breadcrumb.title"></span>
+            </h3>
+        </span>
+        <span class="hint">click to navigate back</span>
+    </div>
+    <div id="LeftPane">
+        <div id="MainMenu">
+            
+            <a class="menuButton" ng-class="{selected: $route.current.title == 'Home'}" href="#">
+                <img src="dist/imgs/home.svg"/>
+            </a>
+            
+            <a class="menuButton" ng-class="{selected: $route.current.title == 'Projects'}" href="#projects">
+                <img src="dist/imgs/projects.svg"/>
+            </a>
+            
+            <a class="menuButton" ng-class="{selected: $route.current.title == 'Education'}" href="#education">
+                <img src="dist/imgs/education.svg"/>
+            </a>
+            
+            <a class="menuButton" ng-class="{selected: $route.current.title == 'Curriculum Vitae'}" href="#cv">
+                <img src="dist/imgs/cv.svg"/>
+            </a>
+        </div>
+        <div id="LeftPaneFooter">
+            <a class="link large bold" href="https://twitter.com/tornikenatsvli" target="_blank">Twiter</a><br>
+            <a class="link large bold" href="https://github.com/TornikeNatsvlishvili" target="_blank">github</a><br><br>
+        </div>
+    </div>
+    <div id="MainContent">
+        <div ng-view></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'museoSR300';
+  src: url('../fonts/museoSR/300.woff') format('woff');
+}
+@font-face {
+  font-family: 'museoSR500';
+  src: url('../fonts/museoSR/500.woff') format('woff');
+}
+@font-face {
+  font-family: 'museoSR700';
+  src: url('../fonts/museoSR/700.woff') format('woff');
+}
+@font-face {
+  font-family: 'geoAlk';
+  src: url('../fonts/geo/alkround-med.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'museoSR300';
+  src: url('../fonts/museoSR/300.woff') format('woff');
+}
+@font-face {
+  font-family: 'museoSR500';
+  src: url('../fonts/museoSR/500.woff') format('woff');
+}
+@font-face {
+  font-family: 'museoSR700';
+  src: url('../fonts/museoSR/700.woff') format('woff');
+}
+@font-face {
+  font-family: 'geoAlk';
+  src: url('../fonts/geo/alkround-med.otf') format('opentype');
+}
+.bold {
+  font-weight: bold;
+}
+.small {
+  font-size: 12pt;
+}
+.large {
+  font-size: 16pt;
+}
+.xlarge {
+  font-size: 18pt;
+}
+.hint {
+  color: #bdbdbd;
+}
+.inline {
+  display: inline;
+}
+.link {
+  font-family: 'museoSR300';
+  text-decoration: none;
+  color: #5487c3;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: 'museoSR300';
+  src: url('../fonts/museoSR/300.woff') format('woff');
+}
+@font-face {
+  font-family: 'museoSR500';
+  src: url('../fonts/museoSR/500.woff') format('woff');
+}
+@font-face {
+  font-family: 'museoSR700';
+  src: url('../fonts/museoSR/700.woff') format('woff');
+}
+@font-face {
+  font-family: 'geoAlk';
+  src: url('../fonts/geo/alkround-med.otf') format('opentype');
+}
+.bold {
+  font-weight: bold;
+}
+.small {
+  font-size: 12pt;
+}
+.large {
+  font-size: 16pt;
+}
+.xlarge {
+  font-size: 18pt;
+}
+.hint {
+  color: #bdbdbd;
+}
+.inline {
+  display: inline;
+}
+.link {
+  font-family: 'museoSR300';
+  text-decoration: none;
+  color: #5487c3;
+}
+.link:hover {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+h1 {
+  font-family: 'museoSR700';
+  color: #556272;
+}
+h2 {
+  font-family: 'museoSR500';
+  color: #4c8293;
+}
+h3 {
+  font-family: 'museoSR300';
+  color: #879bb4;
+}
+body {
+  background: #eeeeee;
+  font-family: 'museoSR300';
+  margin: 0;
+  font-size: 14pt;
+}
+#Header {
+  position: fixed;
+  background: #eeeeee;
+  padding: 60px 0 10px 50px;
+  width: 100%;
+  left: 140px;
+  z-index: 999;
+}
+#Header h1 {
+  font-size: 30pt;
+}
+#Header h2 {
+  font-size: 20pt;
+  font-family: 'geoAlk';
+}
+#LeftPane {
+  position: fixed;
+  background: #eeeeee;
+  height: 100%;
+  margin: 0 20px;
+}
+#LeftPaneFooter {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+#MainContent {
+  position: relative;
+  top: 150px;
+  left: 180px;
+  padding: 60px 20px 20px 20px;
+  width: calc(100% - 300px);
+}
+
+@font-face {
+  font-family: 'museoSR300';
+  src: url('../fonts/museoSR/300.woff') format('woff');
+}
+@font-face {
+  font-family: 'museoSR500';
+  src: url('../fonts/museoSR/500.woff') format('woff');
+}
+@font-face {
+  font-family: 'museoSR700';
+  src: url('../fonts/museoSR/700.woff') format('woff');
+}
+@font-face {
+  font-family: 'geoAlk';
+  src: url('../fonts/geo/alkround-med.otf') format('opentype');
+}
+.bold {
+  font-weight: bold;
+}
+.small {
+  font-size: 12pt;
+}
+.large {
+  font-size: 16pt;
+}
+.xlarge {
+  font-size: 18pt;
+}
+.hint {
+  color: #bdbdbd;
+}
+.inline {
+  display: inline;
+}
+.link {
+  font-family: 'museoSR300';
+  text-decoration: none;
+  color: #5487c3;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.menuButton {
+  display: block;
+  list-style-type: none;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 4px;
+  color: #ebb275;
+  background: #dfdfdf;
+  border: 20px;
+  border-radius: 10px;
+}
+.menuButton:nth-child(1) {
+  position: relative;
+  top: 25px;
+  margin: 30px 0 80px 20px;
+  height: 90px;
+  width: 90px;
+}
+.menuButton img {
+  margin: 10px;
+}
+.menuButton:hover:not(.selected) {
+  background: #bdbdbd;
+}
+.menuButton.selected {
+  padding-right: 0;
+  border-radius: 10px;
+  background: #ebb275;
+}
