@@ -16,4 +16,3 @@ app.get('/ping', function(req, res){
 })
 
 http.createServer(app).listen(PORT);
-console.log(stringify( process.env ));
