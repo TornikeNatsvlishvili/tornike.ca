@@ -9,5 +9,9 @@ app.get('/', function(req, res) {
     res.sendfile('./public/pages/index.html');
 });
 
+app.get('/ping', function(req, res){
+    res.json("pong");
+})
+
 app.listen(PORT);
 console.log('Started server on port: ' + PORT);
