@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res){
-  res.json('Hello World\n');
+    res.sendfile(__dirname + '/public/pages/index.html');
 })
 
 var port = process.env.PORT || 8080;
