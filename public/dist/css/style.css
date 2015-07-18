@@ -44,7 +44,7 @@
   font-size: 18pt;
 }
 .hint {
-  color: #bdbdbd;
+  color: #898989;
 }
 .inline {
   display: inline;
@@ -87,7 +87,7 @@
   font-size: 18pt;
 }
 .hint {
-  color: #bdbdbd;
+  color: #898989;
 }
 .inline {
   display: inline;
@@ -117,15 +117,20 @@ h3 {
   font-family: 'museoSR300';
   color: #879bb4;
 }
-body {
-  background: #eeeeee;
+html {
+  background: url("../imgs/backdrop.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../imgs/backdrop.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../imgs/backdrop.jpg', sizingMethod='scale');
   font-family: 'museoSR300';
   margin: 0;
   font-size: 14pt;
 }
 #Header {
   position: fixed;
-  background: #eeeeee;
   padding: 60px 0 10px 50px;
   width: 100%;
   left: 140px;
@@ -140,7 +145,6 @@ body {
 }
 #LeftPane {
   position: fixed;
-  background: #eeeeee;
   height: 100%;
   margin: 0 20px;
 }
@@ -187,7 +191,7 @@ body {
   font-size: 18pt;
 }
 .hint {
-  color: #bdbdbd;
+  color: #898989;
 }
 .inline {
   display: inline;
@@ -206,26 +210,22 @@ body {
   width: 130px;
   height: 130px;
   margin-bottom: 4px;
-  color: #ebb275;
-  background: #dfdfdf;
   border: 20px;
   border-radius: 10px;
+  fill: rgba(137, 137, 137, 0.7);
+  stroke: #666666;
 }
 .menuButton:nth-child(1) {
-  position: relative;
-  top: 25px;
-  margin: 30px 0 80px 20px;
-  height: 90px;
-  width: 90px;
+  padding: 60px 0 40px 0;
 }
 .menuButton img {
   margin: 10px;
 }
 .menuButton:hover:not(.selected) {
-  background: #bdbdbd;
+  fill: rgba(0, 0, 0, 0.5);
 }
 .menuButton.selected {
   padding-right: 0;
   border-radius: 10px;
-  background: #ebb275;
+  fill: rgba(255, 132, 0, 0.7);
 }

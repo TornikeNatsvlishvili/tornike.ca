@@ -18,8 +18,15 @@ h3 {
 	color: @header3-color;
 }
 
-body { 
-	background: @background-color; 
+html { 
+	background: url("../imgs/backdrop.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../imgs/backdrop.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../imgs/backdrop.jpg', sizingMethod='scale');
+
 	font-family: 'museoSR300';
 	margin: 0;
 	font-size: 14pt;
@@ -27,7 +34,7 @@ body {
 
 #Header {
 	position: fixed;
-	background: @background-color;
+	//background: @background-color;
 	padding: 60px 0 10px 50px;
 	width: 100%;
 	left: 140px;
@@ -44,7 +51,7 @@ body {
 
 #LeftPane{
 	position: fixed;
-	background: @background-color;
+	//background: @background-color;
 	height: 100%;
 	margin: 0 20px;
 }
