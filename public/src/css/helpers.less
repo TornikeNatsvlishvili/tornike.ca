@@ -28,6 +28,14 @@
     box-shadow: @shadow1,@shadow2;
 }
 
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
 .inline {
     display: inline;
 }
@@ -40,3 +48,10 @@
     .link:hover{
 	   text-decoration: underline;
     }
+    
+.backed-text{
+	background: @background-overlay;
+	.box-shadow( 10px 0 0 @background-overlay; -10px 0 0 @background-overlay);
+	display: inline-block;
+	margin: 0 10px 5px 10px;
+}

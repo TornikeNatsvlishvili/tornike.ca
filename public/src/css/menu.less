@@ -9,23 +9,23 @@
 	margin-bottom: 4px;
 	border: 20px;
 	border-radius: 10px;
-
-	fill: @faded-highlight3-color;
-	stroke: @border-color;
+	
+	fill: fade(black, 70%);
 }
 	.menuButton:nth-child(1){
 		padding: 60px 0 40px 0;
+		clip-path: url('src/imgs/cv.svg');
 	}
 	.menuButton img {
 		margin: 10px;
 	}
 	
 	.menuButton:hover:not(.selected) {
-		fill: @faded-highlight4-color;
+		fill: fade(black, 40%);
 	}
 	
 	.menuButton.selected {
 		padding-right: 0;
 		border-radius: 10px;
-		fill: @faded-highlight-color;
+		fill: fade(@cool-color, 70%);
 	}
