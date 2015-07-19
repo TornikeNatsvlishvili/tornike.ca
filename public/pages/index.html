@@ -17,13 +17,13 @@
             <span class="subtitle-georgian-text">თორნიკე ნაცვლიშვილი</span>
         </div>
         <div class="left">
-            <span ng-repeat="breadcrumb in breadcrumbs.get() track by breadcrumb.path" ng-class="{ active: $last }">
+            <div ng-repeat="breadcrumb in breadcrumbs.get() track by breadcrumb.path" class="inline" ng-class="{ active: $last }">
                 <h3 class="inline">
                     &gt;
                     <a ng-if="!$last" ng-href="#{{ breadcrumb.path }}" ng-bind="breadcrumb.title" class="link"></a>
                     <span ng-if="$last" ng-bind="breadcrumb.title"></span>
                 </h3>
-            </span>
+            </div>
             <span ng-show="breadcrumbs.get().length > 1" class="hint">click to navigate back</span>
         </div>
     </div>
