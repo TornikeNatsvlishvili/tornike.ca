@@ -53,7 +53,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'public/src/raw',
             src: ['*.svg'],
-            dest: 'public/src/imgs'
+            dest: 'public/dist/assets/svg'
         }
     },
 

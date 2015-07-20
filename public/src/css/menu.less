@@ -1,31 +1,26 @@
 @import "global.less";
 @import "helpers.less";
 
-.menuButton {
-	display: block;
-	list-style-type: none;
-	width: 130px;
-	height: 130px;
+.menu-item {
 	margin-bottom: 4px;
-	border: 20px;
-	border-radius: 10px;
-	
-	fill: fade(black, 80%);
+	color: black;
+	text-decoration: none;
 }
-	.menuButton:nth-child(1){
-		padding: 60px 0 40px 0;
-		clip-path: url('src/imgs/cv.svg');
-	}
-	.menuButton img {
-		margin: 10px;
+	.menu-item h3{
+		.inline;
 	}
 	
-	.menuButton:hover:not(.selected) {
-		fill: fade(black, 50%);
+	.menu-item img {
+		margin: 2px;
+		display: inline-block;
+		height: 20px;
+	}
+		
+	.menu-item:hover:not(.selected) {
+		color: fade(black, 50%);
 	}
 	
-	.menuButton.selected {
-		padding-right: 0;
-		border-radius: 10px;
-		fill: fade(@cool-color, 70%);
+	.menu-item.selected {
+		border-top: 1px solid #000;
+		padding-top: 4px;
 	}

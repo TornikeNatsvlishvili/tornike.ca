@@ -1,5 +1,12 @@
 @import "global.less";
 
+.center-text{
+	display: block;
+	text-align: center;
+}
+.light {
+	font-weight: lighter;
+}
 .bold {
 	font-weight: bold;
 }
@@ -15,6 +22,7 @@
 
 .hint{
 	color: @highlight3-color;
+	font-size: 10pt;
 }
 
 .box-shadow(@shadow1){
@@ -41,11 +49,18 @@
 }
 
 .link {
-	font-family: 'museoSR300';
 	text-decoration: none;
 	color: @hyperlink-color;
 }
     .link:hover{
+	   text-decoration: underline;
+    }
+	
+.dark-link {
+	text-decoration: none;
+	color: white;
+}
+    .dark-link:hover{
 	   text-decoration: underline;
     }
     
