@@ -8,11 +8,11 @@ module.exports = function(grunt) {
         dest: 'public/dist/js/_bower.js',
         cssDest: 'public/dist/css/_bower.css',
         dependencies: {
-          'semantic-ui': 'jquery',
+          'bootstrap': 'jquery'
         },
         mainFiles: {
           'jquery': ['dist/jquery.min.js'],
-          'semantic-ui': ['dist/semantic.min.js','dist/semantic.min.css']
+          'bootstrap': ['dist/css/bootstrap.css']
         }
       }
     },
@@ -81,7 +81,10 @@ module.exports = function(grunt) {
     // watch our node server for changes
     nodemon: {
       dev: {
-        script: 'server.js'
+        script: 'server.js',
+        options: {
+          ignore: ['node_modules/**','bower_components/**'],
+        }
       }
     },
 
@@ -106,7 +109,7 @@ module.exports = function(grunt) {
   
   grunt.registerTask('default', 
     ['svgmin', 
-      //'bower_concat',
+      'bower_concat',
       'less', 
       'cssmin', 
       'jshint', 

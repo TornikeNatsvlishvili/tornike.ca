@@ -1,3 +1,25 @@
 <div>
-	<a class="link" href="#/projects/gryphone">GryPhone</a>
-</div>	
+	<span class="section-subsubtitle center-text bottom-space-more">My projects include the following:</span>
+	
+	<table class="table table-hover center-table">
+		<thead>
+			<th>Project Name</th>
+			<th>Platform</th>
+			<th>Aspects Involved</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="project in projects" ng-click="navigate(project)" class="clickable">
+				<a>
+					<td>{{project.name}}</td>
+					<td>
+						<span ng-repeat="class in getClass(project.platform)">
+							<span class="my-icon" ng-class="class"></span>
+						</span>
+						{{project.platform}}
+					</td>
+					<td>{{project.aspects}}</td>
+				</a>
+			</tr>
+		</tbody>
+	</table>
+</div>		

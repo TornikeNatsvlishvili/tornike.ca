@@ -34,11 +34,12 @@ angular.module('mainApp', ['ngRoute', 'MainController', 'ProjectsController', 'C
 		redirectTo: '/404'
 	});
 }])
-.run(['$rootScope','$location', '$routeParams', function($rootScope, $location, $routeParams) {
+.run(['$rootScope','$location', '$routeParams','$window', function($rootScope, $location, $routeParams, $window) {
     $rootScope.$on('$routeChangeError', function(event, current, previous, error) {
         console.log(error.status);  
         if(error.status === 404) {
-            $location.path('/404');
+			$location.replace().path('/404');
+			console.log("err");
         }
 	});
 }]);

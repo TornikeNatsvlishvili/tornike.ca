@@ -47,6 +47,21 @@
   display: block;
   text-align: center;
 }
+.center-table {
+  margin: 0 auto !important;
+  float: none !important;
+}
+.clickable {
+  cursor: pointer;
+}
+.bottom-space {
+  display: block;
+  margin-bottom: 20px;
+}
+.bottom-space-more {
+  display: block;
+  margin-bottom: 40px;
+}
 .light {
   font-weight: lighter;
 }
@@ -125,6 +140,15 @@
 .my-icon-borjgali {
   background-image: url(../assets/svg/borjgali.svg);
 }
+.my-icon-windows {
+  background-image: url(../assets/svg/windows_ic.svg);
+}
+.my-icon-android {
+  background-image: url(../assets/svg/android_ic.svg);
+}
+.my-icon-apple {
+  background-image: url(../assets/svg/apple_ic.svg);
+}
 
 @font-face {
   font-family: 'museoSR300';
@@ -145,6 +169,21 @@
 .center-text {
   display: block;
   text-align: center;
+}
+.center-table {
+  margin: 0 auto !important;
+  float: none !important;
+}
+.clickable {
+  cursor: pointer;
+}
+.bottom-space {
+  display: block;
+  margin-bottom: 20px;
+}
+.bottom-space-more {
+  display: block;
+  margin-bottom: 40px;
 }
 .light {
   font-weight: lighter;
@@ -235,7 +274,7 @@ body {
   background: #005859;
 }
 header {
-  display: inline-block;
+  display: inline-block !important;
   width: 100%;
 }
 #site-navigation {
@@ -265,7 +304,6 @@ header {
   margin: 0 auto;
 }
 footer {
-  border-top: 1px solid black;
   padding-top: 4px;
   width: 100%;
   height: 18px;
@@ -293,6 +331,21 @@ footer {
 .center-text {
   display: block;
   text-align: center;
+}
+.center-table {
+  margin: 0 auto !important;
+  float: none !important;
+}
+.clickable {
+  cursor: pointer;
+}
+.bottom-space {
+  display: block;
+  margin-bottom: 20px;
+}
+.bottom-space-more {
+  display: block;
+  margin-bottom: 40px;
 }
 .light {
   font-weight: lighter;
@@ -363,4 +416,9 @@ footer {
 .menu-item.selected {
   border-top: 1px solid #000;
   padding-top: 4px;
+}
+
+.table th,
+.table td {
+  text-align: center;
 }
