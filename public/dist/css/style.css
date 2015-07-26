@@ -1,15 +1,3 @@
-.section-title {
-  font-size: 40pt;
-  font-weight: bold;
-}
-.section-subtitle {
-  font-size: 30pt;
-}
-.section-subsubtitle {
-  font-size: 20pt;
-  color: rgba(0, 0, 0, 0.7);
-}
-
 @font-face {
   font-family: 'museoSR300';
   src: url('../fonts/museoSR/300.woff') format('woff');
@@ -55,11 +43,9 @@
   cursor: pointer;
 }
 .bottom-space {
-  display: block;
   margin-bottom: 20px;
 }
 .bottom-space-more {
-  display: block;
   margin-bottom: 40px;
 }
 .light {
@@ -111,6 +97,25 @@
   box-shadow: 10px 0 0 rgba(255, 255, 255, 0.1), -10px 0 0 rgba(255, 255, 255, 0.1);
   display: inline-block;
   margin: 0 10px 5px 10px;
+}
+.section-title {
+  font-size: 40pt;
+  font-weight: bold;
+}
+.section-subtitle {
+  font-size: 30pt;
+}
+.section-subsubtitle {
+  font-size: 20pt;
+  color: rgba(0, 0, 0, 0.7);
+}
+hr {
+  border: none;
+  border-top: 1px black solid;
+  text-align: center;
+}
+[data-markdown] {
+  padding-bottom: 20px;
 }
 
 .my-icon {
@@ -178,11 +183,9 @@
   cursor: pointer;
 }
 .bottom-space {
-  display: block;
   margin-bottom: 20px;
 }
 .bottom-space-more {
-  display: block;
   margin-bottom: 40px;
 }
 .light {
@@ -235,6 +238,25 @@
   display: inline-block;
   margin: 0 10px 5px 10px;
 }
+.section-title {
+  font-size: 40pt;
+  font-weight: bold;
+}
+.section-subtitle {
+  font-size: 30pt;
+}
+.section-subsubtitle {
+  font-size: 20pt;
+  color: rgba(0, 0, 0, 0.7);
+}
+hr {
+  border: none;
+  border-top: 1px black solid;
+  text-align: center;
+}
+[data-markdown] {
+  padding-bottom: 20px;
+}
 html,
 body {
   height: 100%;
@@ -271,7 +293,7 @@ body {
 }
 #bar {
   height: 4px;
-  background: #005859;
+  background: maroon;
 }
 header {
   display: inline-block !important;
@@ -340,11 +362,9 @@ footer {
   cursor: pointer;
 }
 .bottom-space {
-  display: block;
   margin-bottom: 20px;
 }
 .bottom-space-more {
-  display: block;
   margin-bottom: 40px;
 }
 .light {
@@ -396,6 +416,25 @@ footer {
   box-shadow: 10px 0 0 rgba(255, 255, 255, 0.1), -10px 0 0 rgba(255, 255, 255, 0.1);
   display: inline-block;
   margin: 0 10px 5px 10px;
+}
+.section-title {
+  font-size: 40pt;
+  font-weight: bold;
+}
+.section-subtitle {
+  font-size: 30pt;
+}
+.section-subsubtitle {
+  font-size: 20pt;
+  color: rgba(0, 0, 0, 0.7);
+}
+hr {
+  border: none;
+  border-top: 1px black solid;
+  text-align: center;
+}
+[data-markdown] {
+  padding-bottom: 20px;
 }
 .menu-item {
   margin-bottom: 4px;
