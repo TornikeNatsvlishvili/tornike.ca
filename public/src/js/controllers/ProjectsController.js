@@ -5,18 +5,20 @@ angular.module('ProjectsController', [])
 	$scope.projects = [
 		{ 
 			'name': 'GryPhone', 
+			'href': 'gryphone',
 			'platform': 'Android', 
 			'aspects': 'Serverside, scraping, databases'
 		},
 		{ 
 			'name': 'Animal Database', 
+			'href': 'caf-database',
 			'platform': 'Windows', 
 			'aspects': 'Desktop application, databases'
 		}
 	];
 	
 	$scope.navigate = function(project) {
-		$location.path('/projects/' + project.name);
+		$location.path('/projects/' + project.href);
 	};
 
 	$scope.getClass = function(platform){
