@@ -5,14 +5,16 @@ module.exports = function(grunt) {
     // combine all bower packages into single js/css
     bower_concat: {
       all: {
-        dest: 'public/dist/js/_bower.js',
-        cssDest: 'public/dist/css/_bower.css',
+        dest: {
+            'js': 'public/dist/js/_bower.js',
+            'css': 'public/dist/css/_bower.css'    
+        },
         dependencies: {
           'bootstrap': 'jquery'
         },
         mainFiles: {
           'jquery': ['dist/jquery.min.js'],
-          'bootstrap': ['dist/css/bootstrap.css']
+          'bootstrap': ['dist/css/bootstrap.min.css', 'dist/js/bootstrap.min.js']
         }
       }
     },

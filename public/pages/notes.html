@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="notesApp" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Notes</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/_bower.css">
+    <link rel="stylesheet" href="dist/css/flag-icon.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>-->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="dist/js/app.min.js"></script>
+    <script src="dist/js/_bower.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+</head>
+
+<body ng-controller="notesController">
+
+    <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+
+            <div class="page-header">
+                <h1>Quick Notes</h1>
+            </div>
+
+            <div id="messages"></div>
+
+            <form>
+                <div id="name-group" class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" class="form-control" placeholder="Bruce Wayne">
+                    <span class="help-block"></span>
+                </div>
+                <div id="superhero-group" class="form-group">
+                    <label>Superhero Alias</label>
+                    <input type="text" name="superheroAlias" class="form-control" placeholder="Caped Crusader">
+                    <span class="help-block"></span>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-lg btn-block">
+                    Submit!
+                </button>
+            </form>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Note</th>
+                    <th>Date Created</th>
+                </tr>
+                <tr ng-repeat="entry in entries">
+                    <td>{{entry.id}}</td>
+                    <td>{{entry.note}}</td>
+                    <td>{{entry.created_date}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
