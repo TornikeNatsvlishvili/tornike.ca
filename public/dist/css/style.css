@@ -14,6 +14,9 @@
   font-family: 'geoAlk';
   src: url('../fonts/geo/alkround-med.otf') format('opentype');
 }
+.ui-button:focus {
+  outline: none !important;
+}
 
 @font-face {
   font-family: 'museoSR300';
@@ -30,6 +33,9 @@
 @font-face {
   font-family: 'geoAlk';
   src: url('../fonts/geo/alkround-med.otf') format('opentype');
+}
+.ui-button:focus {
+  outline: none !important;
 }
 .center-text {
   display: block;
@@ -79,6 +85,7 @@
 .link {
   text-decoration: none;
   color: maroon;
+  cursor: pointer;
 }
 .link:hover {
   text-decoration: underline;
@@ -154,6 +161,9 @@ hr {
 .my-icon-apple {
   background-image: url(../assets/svg/apple_ic.svg);
 }
+.my-icon-trash {
+  background-image: url(../assets/svg/trash_ic.svg);
+}
 
 @font-face {
   font-family: 'museoSR300';
@@ -170,6 +180,9 @@ hr {
 @font-face {
   font-family: 'geoAlk';
   src: url('../fonts/geo/alkround-med.otf') format('opentype');
+}
+.ui-button:focus {
+  outline: none !important;
 }
 .center-text {
   display: block;
@@ -219,6 +232,7 @@ hr {
 .link {
   text-decoration: none;
   color: maroon;
+  cursor: pointer;
 }
 .link:hover {
   text-decoration: underline;
@@ -350,6 +364,9 @@ footer {
   font-family: 'geoAlk';
   src: url('../fonts/geo/alkround-med.otf') format('opentype');
 }
+.ui-button:focus {
+  outline: none !important;
+}
 .center-text {
   display: block;
   text-align: center;
@@ -398,6 +415,7 @@ footer {
 .link {
   text-decoration: none;
   color: maroon;
+  cursor: pointer;
 }
 .link:hover {
   text-decoration: underline;
@@ -457,6 +475,16 @@ hr {
   padding-top: 4px;
 }
 
+.vresize {
+  resize: vertical;
+}
+#NoteTable td {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @font-face {
   font-family: 'museoSR300';
   src: url('../fonts/museoSR/300.woff') format('woff');
@@ -472,6 +500,9 @@ hr {
 @font-face {
   font-family: 'geoAlk';
   src: url('../fonts/geo/alkround-med.otf') format('opentype');
+}
+.ui-button:focus {
+  outline: none !important;
 }
 .center-text {
   display: block;
@@ -521,6 +552,7 @@ hr {
 .link {
   text-decoration: none;
   color: maroon;
+  cursor: pointer;
 }
 .link:hover {
   text-decoration: underline;
