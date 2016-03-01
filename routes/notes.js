@@ -27,7 +27,6 @@ router.post('/', function (req, res) {
 
 router.delete('/:id', function (req, res) {
     id = req.params.id
-    console.log(id)
 
     sql.connect(constants.db_config()).then(function () {
         var request = new sql.Request()
