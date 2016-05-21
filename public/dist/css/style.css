@@ -14,6 +14,15 @@
   font-family: 'geoAlk';
   src: url('../fonts/geo/alkround-med.otf') format('opentype');
 }
+a,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
 .ui-button:focus {
   outline: none !important;
 }
@@ -33,6 +42,15 @@
 @font-face {
   font-family: 'geoAlk';
   src: url('../fonts/geo/alkround-med.otf') format('opentype');
+}
+a,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
 }
 .ui-button:focus {
   outline: none !important;
@@ -132,7 +150,7 @@ hr {
   position: relative;
   display: inline-block;
   width: 1.33333333em;
-  line-height: 1em;
+  vertical-align: text-bottom;
 }
 .my-icon:before {
   content: "\00a0";
@@ -180,6 +198,15 @@ hr {
 @font-face {
   font-family: 'geoAlk';
   src: url('../fonts/geo/alkround-med.otf') format('opentype');
+}
+a,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
 }
 .ui-button:focus {
   outline: none !important;
@@ -364,6 +391,15 @@ footer {
   font-family: 'geoAlk';
   src: url('../fonts/geo/alkround-med.otf') format('opentype');
 }
+a,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
 .ui-button:focus {
   outline: none !important;
 }
@@ -457,7 +493,6 @@ hr {
 .menu-item {
   margin-bottom: 4px;
   color: black;
-  text-decoration: none;
 }
 .menu-item h3 {
   display: inline;
@@ -467,12 +502,9 @@ hr {
   display: inline-block;
   height: 20px;
 }
-.menu-item:hover:not(.selected) {
-  color: rgba(0, 0, 0, 0.5);
-}
 .menu-item.selected {
-  border-top: 1px solid #000;
-  padding-top: 4px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 4px;
 }
 
 .vresize {
@@ -500,6 +532,15 @@ hr {
 @font-face {
   font-family: 'geoAlk';
   src: url('../fonts/geo/alkround-med.otf') format('opentype');
+}
+a,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
 }
 .ui-button:focus {
   outline: none !important;
