@@ -21,5 +21,5 @@ app.get('/ping', function(req, res){
 var noteRoutes = require('./routes/notes');
 app.use('/api/notes', noteRoutes);
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 7070;
 http.createServer(app).listen(port);
