@@ -1,0 +1,7 @@
+[program:tornike.ca]
+command=node server.js
+directory=/var/projects/tornike.ca
+autostart=true
+atuorestart=true
+stdout_logfile=/var/log/tornike.ca/stdout.log
+stderr_logfile=/var/log/tornike.ca/stderr.log
