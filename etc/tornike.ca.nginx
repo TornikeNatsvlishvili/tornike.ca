@@ -5,7 +5,7 @@ upstream app_server_tornikeca {
 
 server {
     listen 80;
-    server_name speech.tornike.ca;
+    server_name tornike.ca;
     root /var/projects/tornike.ca/public/dist;
 
     location / {
@@ -21,6 +21,6 @@ server {
 
     error_page 500 502 503 504 /500.html;
     location = /500.html {
-            root /var/projects/speech.ge/app/static;
+            root /var/projects/tornike.ca/public/pages/;
     }
 }
